@@ -32,3 +32,7 @@ variable "aws_amis" {
     us-west-2 = "ami-21f78e11"
   }
 }
+
+variable "deployment_id" {
+  description = "the deployment id that will used to name infra artefacts"
+}
