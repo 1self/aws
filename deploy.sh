@@ -10,4 +10,4 @@ echo "adding key"
 ssh-add "$HOME/.ssh/$keyname"
 export deployment_id=$keyname
 "starting terraform apply"
-/usr/local/bin/terraform apply -var 'key_name=$keyname' -var "public_key_path=/Users/edwardsykes1/.ssh/$keyname.pub" -var "deployment_id=$keyname" -var "profile=1self-terraform"
+/usr/local/bin/terraform apply -var "key_name=$keyname" -var "public_key_path=/Users/edwardsykes1/.ssh/$keyname.pub" -var "deployment_id=$keyname" -var "profile=1self-terraform"
